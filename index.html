@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+          crossorigin="anonymous">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Module 5 Project</title>
   </head>
   <body>
-    
-	
+      <script>
+    //var categoryOne = [ {questionOne: "q1", answerOne = "a1"}, {questionTwo: "q2", answerOne = "a2"}, {questionThree: "q3", answerOne = "a3"} ];
+    //var categoryTwo = [ {questionOne: "q1", answerOne = "a1"}, {questionTwo: "q2", answerOne = "a2"}, {questionThree: "q3", answerOne = "a3"} ];
+    //var categoryThree = [ {questionOne: "q1", answerOne = "a1"}, {questionTwo: "q2", answerOne = "a2"}, {questionThree: "q3", answerOne = "a3"} ];
+function catoneOne() {
+  var txt;
+  var answer = prompt("How do you spell hat?", "hat");
+  if (answer == "hat") {
+    txt = "100";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function catoneTwo() {
+  var txt;
+  var answer = prompt("What is 1 + 1?", "2");
+  if (answer == "2") {
+    txt = "100";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function catoneThree() {
+  var txt;
+  var answer = prompt("How many days are in a week?", "7");
+  if (answer == "7") {
+    txt = "100";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function cattwoOne() {
+  var txt;
+  var answer = prompt("How do you spell cat", "cat");
+  if (answer == "cat") {
+    txt = "200";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function cattwoTwo() {
+  var answer = prompt("What is 5 x 2?", "10");
+  if (answer == "10") {
+    txt = "200";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function cattwoThree() {
+  var txt;
+  var answer = prompt("How many months are in a year?", "12");
+  if (answer == "12") {
+    txt = "200";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function catthreeOne() {
+  var txt;
+  var answer = prompt("How do you spell supercalifragilisticexpialidocious?", "supercalifragilisticexpialidocious");
+  if (answer == "supercalifragilisticexpialidocious") {
+    txt = "300";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function catthreeTwo() {
+  var txt;
+  var answer = prompt("What is 100 x 3?", "300");
+  if (answer == "300") {
+    txt = "300";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+      </script>
+      <script>
+function catthreeThree() {
+  var txt;
+  var answer = prompt("How many days are in a year?", "365");
+  if (answer == "365") {
+    txt = "300";
+  } else {
+    txt = "0";
+  }
+  document.getElementById("score").innerHTML = txt;
+};
+</script>
+      <div class="jumbotron">
+    <h1>Emily's Easy Trivia</h1>
+    <p>Have you completed Kindergarten ? Then THIS is the game for you !</p>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Spelling</h5>
+        </div>
+        <div class="col">
+          <h5>Math</h5>
+        </div>
+        <div class="col">
+          <h5>Calendar</h5>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col">
+             <button class="btn btn-info" onclick="catoneOne()">$100</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-info" onclick="catoneTwo()">$100</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-info" onclick="catoneThree()">$100</button>
+          </div>
+      </div>
+          <br>
+      <div class="row">
+          <div class="col">
+             <button class="btn btn-success" onclick="cattwoOne()">$200</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-success" onclick="cattwoTwo()">$200</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-success" onclick="cattwoThree()">$200</button>
+          </div>
+          </div>
+          <br>
+      <div class="row">
+           <div class="col">
+             <button class="btn btn-danger" onclick="catthreeOne()">$300</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-danger" onclick="catthreeTwo()">$300</button>
+          </div>
+          <div class="col">
+             <button class="btn btn-danger" onclick="catthreeThree()">$300</button>
+          </div>
+      </div>
+        <br>
+     <h4>Score:</h4>
+  <p id="score"></p>
+    </div>
+
+
+      
+      
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
